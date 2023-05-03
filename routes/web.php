@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\clienteController;
+use App\Http\Controllers\productoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\proveedoresController;
 use Illuminate\Support\Facades\Route;
@@ -33,4 +34,4 @@ require __DIR__.'/auth.php';
 
 Route::resource('/proveedores', proveedoresController::class);
 Route::resource('/clientes', clienteController::class);
-
+Route::resource('/juegos', productoController::class);
