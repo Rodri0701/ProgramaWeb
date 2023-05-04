@@ -79,7 +79,7 @@
           
             @foreach($productos as $prod)
             <tr>
-                <td>{{$prod -> id }}</td>
+                <td>{{$prod -> id}}</td>
                 <td>{{$prod -> NombreProd}}</td>
                 <td>{{$prod -> Imagen}}</td>
                 <td>{{$prod -> Sinopsis}}</td>
