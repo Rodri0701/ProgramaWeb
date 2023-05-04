@@ -35,10 +35,11 @@
     </style>
 </head>
 <body>
+
     <div class="top-bar">
         <!-- Aqui va el logo -->
           <div class="logo">
-          <a href=" ">Nombre de la tienda</a>
+          <a href="{{url (' ') }}">Nombre de la tienda</a>
         </div>
         <!-- Parte del logo -->
         <!-- <div class="search-bar">
@@ -57,8 +58,43 @@
           <a href="{{url('proveedores')}}">Ver nuestros proveedores</a>
         </div>
       </div>
+<main>
+      <table class="table table-hover">
+        <thead>
+            <tr>
+              
+                <th>id</th>
+                <th>NombreProd</th>
+                <th>Imagen</th>
+                <th>Sinopsis</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>id_prov</th>  
 
-      <div class="content">
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+          
+            @foreach($productos as $prod)
+            <tr>
+                <td>{{$prod -> id }}</td>
+                <td>{{$prod -> NombreProd}}</td>
+                <td>{{$prod -> Imagen}}</td>
+                <td>{{$prod -> Sinopsis}}</td>
+                <td>{{$prod -> Precio}}</td>
+                <td>{{$prod -> Stock}}</td>
+                <td>{{$prod -> id_prov -> Nombre_del_provedor}}</td>
+            </tr>
+            @endforeach
+            
+
+        </tbody>
+    </table>
+  </main>
+
+     {{--  <div class="content">
         <!-- Aquí va el contenido principal de la página -->
         <div class="card">
           <img src="OIP (1).jpg" alt="Imagen del artículo">
@@ -68,7 +104,7 @@
         </div>
         <div class="card">
           <img src="OIP (1).jpg" alt="Imagen del artículo">
-          <h3>Título del artículo</h3>
+          <h3>Título del artículo</h3> 
           <p>Descripción breve del artículo.</p>
           <a href="#">Leer más</a>
         </div>
@@ -110,6 +146,8 @@
           <a href="#">Leer más</a>
         </div>
         
-      </div>
+      </div> --}}
+
+      
 </body>
 </html>

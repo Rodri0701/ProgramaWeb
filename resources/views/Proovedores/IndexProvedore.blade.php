@@ -13,7 +13,7 @@
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>Nombre_del_Provedor</th>
+                    <th>Nombre_del_provedor</th>
                     <th>Direccion_de_la_empresa</th>
                     <th>Numero_de_la_empresa</th>
                     <th>Correo_de_la_empresa</th>                    

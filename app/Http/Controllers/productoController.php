@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\productos;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Return_;
 
 class productoController extends Controller
 {
@@ -12,7 +13,9 @@ class productoController extends Controller
      */
     public function index()
     {
-        //
+        $productos = productos::all();
+        return view('leyout/index', ['productos' => $productos ]);
+      
     }
 
     /**
