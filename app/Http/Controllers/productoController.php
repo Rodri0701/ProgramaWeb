@@ -13,8 +13,8 @@ class productoController extends Controller
      */
     public function index()
     {
-        $productos = productos::all();
-        return view('leyout/index', ['productos' => $productos ]);
+        $juegos = productos::all();
+        return view('leyout/juegos', ['juegos' => $juegos ]);
       
     }
 
@@ -23,7 +23,7 @@ class productoController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**
