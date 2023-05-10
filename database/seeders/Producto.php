@@ -22,6 +22,15 @@ class Producto extends Seeder
         $producto -> id_prov = 1;
         $producto -> save();
 
+
+        $producto1 = new productos();
+
+        $producto1 -> NombreProd = "asf";
+        $producto1 -> Sinopsis = "asfsdaf";
+        $producto1 -> Precio = 800;
+        $producto1 -> Stock = 10;
+        $producto1 -> id_prov = 2;
+        $producto1 -> save();
         
     }
 }
