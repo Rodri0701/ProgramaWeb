@@ -60,7 +60,7 @@ class proveedoresController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(provedore $id)
+    public function edit(provedore $id) 
     {
         $proveedores = provedore::find($id);
         return view('Proovedores.provedoresedit',['proveedore' => $proveedores]);

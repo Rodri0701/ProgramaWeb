@@ -35,10 +35,11 @@
     </style>
 </head>
 <body>
+
     <div class="top-bar">
         <!-- Aqui va el logo -->
           <div class="logo">
-          <a href=" ">Nombre de la tienda</a>
+          <a href="{{url (' ') }}">Nombre de la tienda</a>
         </div>
         <!-- Parte del logo -->
         <!-- <div class="search-bar">
@@ -56,9 +57,13 @@
         <div class="account-menu">
           <a href="{{url('proveedores')}}">Ver nuestros proveedores</a>
         </div>
+        <div class="account-menu">
+          <a href="{{url('juegos')}}">Ver nuestros juegos</a>
+        </div>
+        
       </div>
 
-      <div class="content">
+     {{--  <div class="content">
         <!-- Aquí va el contenido principal de la página -->
         <div class="card">
           <img src="OIP (1).jpg" alt="Imagen del artículo">
@@ -68,7 +73,7 @@
         </div>
         <div class="card">
           <img src="OIP (1).jpg" alt="Imagen del artículo">
-          <h3>Título del artículo</h3>
+          <h3>Título del artículo</h3> 
           <p>Descripción breve del artículo.</p>
           <a href="#">Leer más</a>
         </div>
@@ -110,6 +115,8 @@
           <a href="#">Leer más</a>
         </div>
         
-      </div>
+      </div> --}}
+
+      
 </body>
 </html>

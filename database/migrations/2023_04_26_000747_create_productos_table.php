@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('NombreProd',20)->nullable(false); /* Campo que no puede estar vacio */
-            $table ->binary('Imagen');
+            $table ->binary('Imagen') -> nullable(true);
             $table->longText('Sinopsis')->nullable(false); /* Campo que no puede estar vacio */
             $table->decimal('Precio', 5,2)->nullable(false); /* Campo que no puede estar vacio */
             $table->integer('Stock')->nullable(false); /* Campo que no puede estar vacio */
